@@ -42,7 +42,7 @@ npm test
 
 # Project Structure
 
-/
+minivault-api/
 ├── src/
 │   └── main.js       # Core application logic and routes
 ├── test/

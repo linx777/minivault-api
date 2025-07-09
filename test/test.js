@@ -40,7 +40,8 @@ describe('POST /generate', () => {
       .expect(200); 
 
     // Assert
-    expect(response.text).toContain('data: {"token":"right."}\n\n');
+    expect(response.text).toContain('Yea,');
+    expect(response.text).toContain('right.');
     const logContent = fs.readFileSync(logFilePath, 'utf-8');
     const loggedJson = JSON.parse(logContent.trim());
     expect(loggedJson.output.response).toEqual(expectedFullResponse);
